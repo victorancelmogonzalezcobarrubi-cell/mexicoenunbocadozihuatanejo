@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas y Contacto — México en un Bocado</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+        .tarjeta {
+            background: linear-gradient(135deg, rgba(50,35,15,0.5), rgba(30,20,10,0.6));
+            padding: 1.6rem;
+            border-radius: 14px;
+            border: 1px solid rgba(212,165,67,0.3);
+            margin-bottom: 1.5rem;
+        }
+        .tarjeta h3 {
+            color: var(--dorado);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        .dato {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 0.8rem;
+            padding: 0.7rem;
+            background-color: rgba(0,0,0,0.3);
+            border-radius: 8px;
+        }
+        .dato a {
+            color: var(--crema);
+            text-decoration: none;
+        }
+        .dato a:hover {
+            color: var(--dorado);
+        }
+        .btn-whatsapp {
+            display: block;
+            text-align: center;
+            background-color: #25D366;
+            color: white;
+            padding: 0.9rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 1.2rem 0;
+            transition: all 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1DA853;
+            transform: translateY(-2px);
+        }
+        .volver {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .volver a {
+            color: var(--dorado);
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CONTACTO</h1>
+        <p class="subtitulo">¡Reserva tu mesa y escríbenos!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="carta.html">Carta</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="contacto.html" style="color:var(--dorado); border-color:var(--dorado);">Contacto</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>📞 ¡Hablamos!</h2>
+
+        <div class="tarjeta">
+            <h3>Información de Contacto</h3>
+            
+            <div class="dato">
+                📲 <strong>WhatsApp:</strong> 
+                <a href="https://wa.me/7551090498" target="_blank">7551090498</a>
+            </div>
+            <div class="dato">
+                📞 <strong>Teléfono:</strong> 
+                <a href="tel:7551090498">7551090498</a>
+            </div>
+            <div class="dato">
+                ✉️ <strong>Correo:</strong> 
+                <a href="mailto:tucorreo@email.com">tucorreo@email.com</a>
+            </div>
+
+            <a href="https://wa.me/7551090498?text=¡Hola! Quisiera hacer una reserva" target="_blank" class="btn-whatsapp">
+                💬 Reservar por WhatsApp
+            </a>
+        </div>
+
+        <div class="volver">
+            <a href="../index.html">← Volver al inicio</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 México en un Bocado — by Esmir & Nely</p>
+    </footer>
+
+</body>
+</html>

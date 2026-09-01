@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Carta — México en un Bocado</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+        .categoria {
+            margin-bottom: 2.5rem;
+        }
+        .categoria h3 {
+            color: var(--dorado);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid rgba(212,165,67,0.3);
+        }
+        .plato {
+            background: linear-gradient(135deg, rgba(50,35,15,0.5), rgba(30,20,10,0.6));
+            padding: 1rem;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            border-left: 3px solid var(--dorado);
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .plato-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 2px solid rgba(212,165,67,0.4);
+            flex-shrink: 0;
+        }
+        .plato-contenido {
+            flex: 1;
+            min-width: 200px;
+        }
+        .plato h4 {
+            color: var(--crema);
+            font-size: 1.05rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .nombre-plato {
+            flex: 1;
+        }
+        .precio {
+            color: var(--dorado);
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .descripcion {
+            font-size: 0.9rem;
+            color: #C8B896;
+            margin-top: 0.4rem;
+            font-style: italic;
+            line-height: 1.5;
+        }
+        .volver {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .volver a {
+            color: var(--dorado);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .nota {
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 550px) {
+            .plato {
+                flex-direction: column;
+                text-align: center;
+            }
+            .plato-img {
+                width: 100%;
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>NUESTRA CARTA</h1>
+        <p class="subtitulo">La Perla Negra — by Nelly</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="carta.html" style="color:var(--dorado); border-color:var(--dorado);">Carta</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>🍽️ Menú</h2>
+
+        <!-- ☀️ DESAYUNOS -->
+        <div class="categoria">
+            <h3>☀️ Desayunos</h3>
+
+            <div class="plato">
+                <img src="../imagenes/pan_tostado.jpg" alt="Pan Tostado" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Pan Tostado</span> <span class="precio">$75</span></h4>
+                    <p class="descripcion">Con mantequilla, Nutella, miel o mermelada</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/pan_frances.jpg" alt="Pan Francés" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Pan Francés</span> <span class="precio">$90</span></h4>
+                    <p class="descripcion">Con mantequilla, Nutella, miel o mermelada</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/hot_cakes.jpg" alt="Hot Cakes" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Hot Cakes</span> <span class="precio">$95</span></h4>
+                    <p class="descripcion">Con Nutella, miel de maple o mermelada</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/coctel_de_frutas.jpg" alt="Cóctel de Frutas" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Cóctel de Frutas</span> <span class="precio">$90</span></h4>
+                    <p class="descripcion">Con yogurt, granola y miel</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/ensalada_mixta.jpg" alt="Ensalada Mixta" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Ensalada Mixta</span> <span class="precio">$125</span></h4>
+                    <p class="descripcion">Lechuga, calabacita, zanahoria, pepino, jícama, betabel. Acompañada de pollo, carne, pavo o queso panela y semillas</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/baguette.jpg" alt="Baguette" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Baguette</span> <span class="precio">$125</span></h4>
+                    <p class="descripcion">Pollo, res o pavo con queso panela, manchego o Oaxaca. Servido con papas o ensalada</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/huevos_al_gusto.jpg" alt="Huevos al Gusto" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Huevos al Gusto</span> <span class="precio">$95</span></h4>
+                    <p class="descripcion">Acompañados de frijol y tortillas</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/huevos_divorciados.jpg" alt="Huevos Divorciados" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Huevos Divorciados</span> <span class="precio">$100</span></h4>
+                    <p class="descripcion">Con pan pita o tortilla en salsa verde o roja</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/omelette.jpg" alt="Omelette" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Omelette</span> <span class="precio">$125</span></h4>
+                    <p class="descripcion">Vegetales, jamón, champiñones o espinacas. Servido con frijol y tortilla o ensalada y pan</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/desayuno_americano.jpg" alt="Desayuno Americano" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Desayuno Americano</span> <span class="precio">$125</span></h4>
+                    <p class="descripcion">2 hot cakes, 2 huevos y 2 tiras de tocino</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 🥤 BEBIDAS -->
+        <div class="categoria">
+            <h3>🥤 Bebidas</h3>
+
+            <div class="plato">
+                <img src="../imagenes/cafe_de_olla.jpg" alt="Café de Olla con Canela" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Café de Olla con Canela</span> <span class="precio">$45</span></h4>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/cafe_americano.jpg" alt="Café Americano con Leche" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Café Americano con Leche</span> <span class="precio">$45</span></h4>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/licuado_de_frutas.jpg" alt="Licuado de Frutas" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Licuado de Frutas</span> <span class="precio">$40</span></h4>
+                    <p class="descripcion">Plátano, fresa o papaya</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/jugo_naranja.jpg" alt="Jugo de Naranja Natural" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Jugo de Naranja Natural</span> <span class="precio">$55</span></h4>
+                    <p class="descripcion">400 ml</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/jugo_jumex.jpg" alt="Jugo Jumex" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Jugo Jumex</span> <span class="precio">$40</span></h4>
+                    <p class="descripcion">400 ml</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/limonada_naranjada.jpg" alt="Limonada o Naranjada" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Limonada o Naranjada</span> <span class="precio">$65</span></h4>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/agua_natural.jpg" alt="Agua Natural" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Agua Natural</span> <span class="precio">$15</span></h4>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/agua_mineral.jpg" alt="Agua Mineral" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Agua Mineral</span> <span class="precio">$30</span></h4>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/agua_fresca.jpg" alt="Agua Fresca" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Agua Fresca</span> <span class="precio">$35</span></h4>
+                    <p class="descripcion">Jamaica, Piña o Melón — 400 ml</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/refrescos.jpg" alt="Refrescos" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Refrescos</span> <span class="precio">$30</span></h4>
+                    <p class="descripcion">Coca-Cola, Yoli, Fanta o Manzanita</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/cerveza.jpg" alt="Cerveza" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Cerveza</span> <span class="precio">$40</span></h4>
+                    <p class="descripcion">Corona o Victoria</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/vino.jpg" alt="Vino" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Vino</span> <span class="precio">$80</span></h4>
+                    <p class="descripcion">Blanco o tinto</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 🌮 MENÚ MEXICANO -->
+        <div class="categoria">
+            <h3>🌮 Menú Mexicano</h3>
+
+            <div class="plato">
+                <img src="../imagenes/enchiladas.jpg" alt="Enchiladas Verdes, Rojas o Mole" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Enchiladas Verdes, Rojas o Mole</span> <span class="precio">$120</span></h4>
+                    <p class="descripcion">Pollo o queso — 4 piezas</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/enchiladas_suizas.jpg" alt="Enchiladas Suizas" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Enchiladas Suizas (Verdes o Rojas)</span> <span class="precio">$130</span></h4>
+                    <p class="descripcion">Pollo o queso — 4 piezas</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/sopes.jpg" alt="Sopes" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Sopes</span> <span class="precio">$95</span></h4>
+                    <p class="descripcion">Pollo, queso Oaxaca, res o chorizo — 3 piezas</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/quesadillas.jpg" alt="Quesadillas" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Quesadillas</span> <span class="precio">$75</span></h4>
+                    <p class="descripcion">Huitlacoche, chorizo, pollo, res o queso — 1 pieza</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/tartinas.jpg" alt="Tartinas" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Tartinas</span> <span class="precio">$120</span></h4>
+                    <p class="descripcion">Pan tostado con base de aguacate y huevo</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/molletes.jpg" alt="Molletes" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Molletes</span> <span class="precio">$95</span></h4>
+                    <p class="descripcion">Frijol, pollo, carne o chorizo, gratinados</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/tacos_dorados.jpg" alt="Tacos Dorados de Pollo" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Tacos Dorados de Pollo</span> <span class="precio">$95</span></h4>
+                    <p class="descripcion">Con consomé — 4 piezas</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/barbacoa_de_res.jpg" alt="Barbacoa de Res" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Barbacoa de Res</span> <span class="precio">$130</span></h4>
+                    <p class="descripcion">3 tacos servidos en tortilla hecha a mano y consomé</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/chilaquiles_con_huevo.jpg" alt="Chilaquiles con Huevo" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Chilaquiles Rojos o Verdes con Huevo</span> <span class="precio">$125</span></h4>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/chilaquiles_con_carne.jpg" alt="Chilaquiles con Pollo o Res" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Chilaquiles con Pollo o Res</span> <span class="precio">$145</span></h4>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/aporreadillo.jpg" alt="Aporreadillo" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Aporreadillo</span> <span class="precio">$130</span></h4>
+                    <p class="descripcion">Huevos con carne en salsa roja, servido con arroz, frijol, queso y tortillas a mano</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/milanesa.jpg" alt="Milanesa de Res o Pollo" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Milanesa de Res o Pollo</span> <span class="precio">$160</span></h4>
+                    <p class="descripcion">Con arroz, frijoles y papas</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/platillo_especial.jpg" alt="Platillo Especial" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Platillo Especial</span> <span class="precio">$160</span></h4>
+                    <p class="descripcion">Omelette, chilaquiles y ensalada</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/tampiqueña.jpg" alt="Tampiqueña" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Tampiqueña</span> <span class="precio">$250</span></h4>
+                    <p class="descripcion">Con arroz, frijol, dos enchiladas rojas y corte de arrachera</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 🥪 SÁNDWICHES -->
+        <div class="categoria">
+            <h3>🥪 Sándwiches</h3>
+
+            <div class="plato">
+                <img src="../imagenes/club_sandwich.jpg" alt="Club Sandwich" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Club Sandwich</span> <span class="precio">$125</span></h4>
+                    <p class="descripcion">Jamón, queso y pollo. Servido con papas en gajos o papas fritas</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/pancake_sliders.jpg" alt="Pancake Sliders" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Pancake Sliders</span> <span class="precio">$150</span></h4>
+                    <p class="descripcion">2 hamburguesas de carne, queso y tocino sobre hot cakes. Con papas fritas, ensalada o papas en gajo</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/blt_sandwich.jpg" alt="BLT Sandwich" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">BLT Sandwich</span> <span class="precio">$140</span></h4>
+                    <p class="descripcion">Tocino, lechuga y tomate. Servido con papas fritas, ensalada o papas en gajo</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/belta_sandwich.jpg" alt="BELTA Sandwich" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">BELTA Sandwich</span> <span class="precio">$150</span></h4>
+                    <p class="descripcion">Tocino, huevo, lechuga, tomate y aguacate. Servido con papas fritas, ensalada o papas en gajo</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/sandwich_pan_ingles.jpg" alt="Sándwich de Pan Inglés" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Sándwich de Pan Inglés</span> <span class="precio">$150</span></h4>
+                    <p class="descripcion">2 sándwiches con huevo, tocino o jamón y queso. Acompañados de fruta</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/bagel_sandwich.jpg" alt="Bagel Sandwich" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Bagel Sandwich</span> <span class="precio">$140</span></h4>
+                    <p class="descripcion">Tocino, lechuga, tomate, huevo y aguacate</p>
+                </div>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/hamburguesa.jpg" alt="Hamburguesa" class="plato-img">
+                <div class="plato-contenido">
+                    <h4><span class="nombre-plato">Hamburguesa</span> <span class="precio">$170</span></h4>
+                    <p class="descripcion">Carne, queso, tocino, pepinillo, lechuga y tomate. Servida con papas fritas o papas en gajo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="volver">
+            <a href="../index.html">← Volver al inicio</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 México en un Bocado — La Perla Negra — by Nelly</p>
+        <p class="nota">Río Mississippi 22-9, Col. Darío Galeana, Zihuatanejo, Guerrero · Tel: 755 109 0498</p>
+    </footer>
+
+</body>
+</html>

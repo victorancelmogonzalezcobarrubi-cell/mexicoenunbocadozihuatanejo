@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación y Horarios — México en un Bocado</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+        .tarjeta {
+            background: linear-gradient(135deg, rgba(50,35,15,0.5), rgba(30,20,10,0.6));
+            padding: 1.6rem;
+            border-radius: 14px;
+            border: 1px solid rgba(212,165,67,0.3);
+            margin-bottom: 1.5rem;
+        }
+        .tarjeta h3 {
+            color: var(--dorado);
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+        .tarjeta p {
+            margin-bottom: 0.5rem;
+        }
+        .horario-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.4rem 0;
+            border-bottom: 1px dashed rgba(212,165,67,0.2);
+        }
+        .dia { font-weight: 600; }
+        .mapa-contenedor {
+            margin-top: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid rgba(212,165,67,0.3);
+        }
+        .volver {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .volver a {
+            color: var(--dorado);
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>UBICACIÓN</h1>
+        <p class="subtitulo">¿Dónde estamos y cuándo abrir?</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="carta.html">Carta</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="ubicacion.html" style="color:var(--dorado); border-color:var(--dorado);">Ubicación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>📍 Visítanos</h2>
+
+        <div class="tarjeta">
+            <h3>Dirección</h3>
+            <p><strong>La Enredadera</strong></p>
+            <p>El Hujal, 40897</p>
+            <p>Zihuatanejo, Guerrero, México</p>
+
+            <div class="mapa-contenedor">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.8887433018326!2d-101.54948688471348!3d17.65167218780474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8434770cb520c917%3A0xeaf188b3f6848fff!2sLa%20Enredadera%2C%20El%20Hujal%2C%2040897%20Zihuatanejo%2C%20Gro.!5e0!3m2!1ses!2smx!4v1756412214567!5m2!1ses!2smx" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <h3>🕐 Horarios de Atención</h3>
+            <div class="horario-item">
+                <span class="dia">Lunes a Viernes</span>
+                <span>12:00 PM – 9:00 PM</span>
+            </div>
+            <div class="horario-item">
+                <span class="dia">Sábados</span>
+                <span>11:00 AM – 10:00 PM</span>
+            </div>
+            <div class="horario-item">
+                <span class="dia">Domingos</span>
+                <span>11:00 AM – 8:00 PM</span>
+            </div>
+            <p style="margin-top:0.8rem; font-size:0.9rem; color:#C8B896;">* Puedes modificar los horarios según tu disponibilidad.</p>
+        </div>
+
+        <div class="volver">
+            <a href="../index.html">← Volver al inicio</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 México en un Bocado — by Esmir & Nely</p>
+    </footer>
+
+</body>
+</html>
